@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WELCOME TO CIPHERA</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body {
+  width:100%; height:100%;
+  background: radial-gradient(ellipse at center, #1a0d0d 0%, #0a0606 70%, #000 100%);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  overflow:hidden;
+  display:flex; align-items:center; justify-content:center;
+}
+.container {
+  text-align:center;
+  padding:40px 60px;
+  position:relative;
+}
+.logo {
+  font-family: 'Georgia', serif;
+  font-weight: 900;
+  font-size: 96px;
+  letter-spacing: 14px;
+  background: linear-gradient(180deg, #f5e7a8 0%, #d4af37 35%, #a07515 60%, #d4af37 90%, #f5e7a8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 20px rgba(212,175,55,0.4);
+  margin-bottom: 20px;
+  animation: shimmer 3s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0%,100% { filter: brightness(1); }
+  50% { filter: brightness(1.2); }
+}
+.divider {
+  width: 360px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  margin: 24px auto;
+}
+.welcome {
+  font-size: 38px;
+  letter-spacing: 8px;
+  color: #f5e7a8;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.subtitle {
+  font-size: 16px;
+  color: #b8a35a;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.crown {
+  font-size: 40px;
+  color: #d4af37;
+  margin-bottom: 16px;
+  text-shadow: 0 0 20px rgba(212,175,55,0.6);
+}
+.corner {
+  position:absolute;
+  width: 40px; height: 40px;
+  border: 2px solid #d4af37;
+}
+.corner.tl { top: 0; left: 0; border-right:none; border-bottom:none; }
+.corner.tr { top: 0; right: 0; border-left:none; border-bottom:none; }
+.corner.bl { bottom: 0; left: 0; border-right:none; border-top:none; }
+.corner.br { bottom: 0; right: 0; border-left:none; border-top:none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+  <div class="crown">&#9819;</div>
+  <div class="welcome">Welcome to</div>
+  <div class="logo">CIPHERA</div>
+  <div class="divider"></div>
+  <div class="subtitle">Excelencia em Operacao</div>
+</div>
+</body>
+</html>
